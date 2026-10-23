@@ -14,19 +14,11 @@
 			remoteGlobalIDString = E93766BB3089E9E0006A9882;
 			remoteInfo = LocalMart;
 		};
-		E93766D43089E9E1006A9882 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E93766B43089E9E0006A9882 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E93766BB3089E9E0006A9882;
-			remoteInfo = LocalMart;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E93766BC3089E9E0006A9882 /* LocalMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93766C93089E9E1006A9882 /* LocalMartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalMartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E93766D33089E9E1006A9882 /* LocalMartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalMartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +30,6 @@
 		E93766CC3089E9E1006A9882 /* LocalMartTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = LocalMartTests;
-			sourceTree = "<group>";
-		};
-		E93766D63089E9E1006A9882 /* LocalMartUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LocalMartUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E93766D03089E9E1006A9882 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +57,6 @@
 			children = (
 				E93766BE3089E9E0006A9882 /* LocalMart */,
 				E93766CC3089E9E1006A9882 /* LocalMartTests */,
-				E93766D63089E9E1006A9882 /* LocalMartUITests */,
 				E93766BD3089E9E0006A9882 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +66,6 @@
 			children = (
 				E93766BC3089E9E0006A9882 /* LocalMart.app */,
 				E93766C93089E9E1006A9882 /* LocalMartTests.xctest */,
-				E93766D33089E9E1006A9882 /* LocalMartUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +84,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E937675E308A1F14006A9882 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				E93766BE3089E9E0006A9882 /* LocalMart */,
@@ -140,29 +119,6 @@
 			productReference = E93766C93089E9E1006A9882 /* LocalMartTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E93766D23089E9E1006A9882 /* LocalMartUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E93766E33089E9E1006A9882 /* Build configuration list for PBXNativeTarget "LocalMartUITests" */;
-			buildPhases = (
-				E93766CF3089E9E1006A9882 /* Sources */,
-				E93766D03089E9E1006A9882 /* Frameworks */,
-				E93766D13089E9E1006A9882 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E93766D53089E9E1006A9882 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				E93766D63089E9E1006A9882 /* LocalMartUITests */,
-			);
-			name = LocalMartUITests;
-			packageProductDependencies = (
-			);
-			productName = LocalMartUITests;
-			productReference = E93766D33089E9E1006A9882 /* LocalMartUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,10 +136,6 @@
 						CreatedOnToolsVersion = 26.5;
 						TestTargetID = E93766BB3089E9E0006A9882;
 					};
-					E93766D23089E9E1006A9882 = {
-						CreatedOnToolsVersion = 26.5;
-						TestTargetID = E93766BB3089E9E0006A9882;
-					};
 				};
 			};
 			buildConfigurationList = E93766B73089E9E0006A9882 /* Build configuration list for PBXProject "LocalMart" */;
@@ -195,6 +147,9 @@
 			);
 			mainGroup = E93766B33089E9E0006A9882;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E9376758308A1C98006A9882 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E93766BD3089E9E0006A9882 /* Products */;
 			projectDirPath = "";
@@ -202,7 +157,6 @@
 			targets = (
 				E93766BB3089E9E0006A9882 /* LocalMart */,
 				E93766C83089E9E1006A9882 /* LocalMartTests */,
-				E93766D23089E9E1006A9882 /* LocalMartUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +170,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E93766C73089E9E1006A9882 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E93766D13089E9E1006A9882 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +193,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E93766CF3089E9E1006A9882 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -261,10 +201,9 @@
 			target = E93766BB3089E9E0006A9882 /* LocalMart */;
 			targetProxy = E93766CA3089E9E1006A9882 /* PBXContainerItemProxy */;
 		};
-		E93766D53089E9E1006A9882 /* PBXTargetDependency */ = {
+		E937675E308A1F14006A9882 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E93766BB3089E9E0006A9882 /* LocalMart */;
-			targetProxy = E93766D43089E9E1006A9882 /* PBXContainerItemProxy */;
+			productRef = E937675D308A1F14006A9882 /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -498,46 +437,6 @@
 			};
 			name = Release;
 		};
-		E93766E43089E9E1006A9882 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DNXX3PDR88;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.garima.LocalMartUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LocalMart;
-			};
-			name = Debug;
-		};
-		E93766E53089E9E1006A9882 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DNXX3PDR88;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.garima.LocalMartUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LocalMart;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,16 +467,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E93766E33089E9E1006A9882 /* Build configuration list for PBXNativeTarget "LocalMartUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E93766E43089E9E1006A9882 /* Debug */,
-				E93766E53089E9E1006A9882 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9376758308A1C98006A9882 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.65.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E937675D308A1F14006A9882 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9376758308A1C98006A9882 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E93766B43089E9E0006A9882 /* Project object */;
 }

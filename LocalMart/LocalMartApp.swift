@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct LocalMartApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-        }
+        }.modelContainer(for: [Listing.self, SyncOperation.self])
     }
 }
